@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/Logo.png" alt="Logo de Alura"> 
+    </header>
+    <main class="main">
+        <section class="bloque__1">
+            <h1 class="main__h1">Ingrese el texto aquí</h1>
+            <textarea id="inputText" class="main__textarea" rows="6" cols="50" placeholder=""></textarea>
+            <a class="main__simbolo">
+                <img src="./assets/simbolo.png" alt="Solo letras minúsculas y sin acentos">
+                Solo letras minúsculas y sin acentos
+            </a>
+            <div class="main__click">
+                <button id="encryptButton" class="main__click__encriptar" type="button">Encriptar</button>
+                <button id="decryptButton" class="main__click__desencriptar" type="button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="bloque__2">
+            <img id="noResultImage" class="main__muñeco" src="./assets/Muñeco.png" alt="Representación gráfica de no se encontraron resultados"> 
+            <p id="message1" class="main__parrafo1">Ningún mensaje fue encontrado</p>
+            <p id="message2" class="main__parrafo2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p id="outputText" class="main__output-text"></p> 
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
